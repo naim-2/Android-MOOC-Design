@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F8F8"
+    tools:context=".RandomCats">
+
+    <!-- TextView for title -->
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cat Image"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ImageView to display cat image -->
+    <ImageView
+        android:id="@+id/image_view_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_below="@id/text_view_title"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" /> <!-- Initially set to gone -->
+
+    <!-- ProgressBar to indicate loading -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_view_cat"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" /> <!-- Initially visible -->
+
+    </RelativeLayout>

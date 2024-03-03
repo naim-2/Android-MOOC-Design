@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F8F8"
+    tools:context=".HomePage">
+
+    <!-- TextView for app title -->
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to My App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Button to navigate to MainActivity -->
+    <Button
+        android:id="@+id/button_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Country"
+        android:layout_below="@id/text_view_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="18sp" />
+
+    <!-- Button to navigate to RandomCats activity -->
+    <Button
+        android:id="@+id/button_main_activity_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get A Random Cat Image"
+        android:layout_below="@id/button_main_activity"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="18sp" />
+
+    </RelativeLayout>

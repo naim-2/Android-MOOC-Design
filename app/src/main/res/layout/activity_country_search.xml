@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CountrySearch">
+
+    <!-- TextInputLayout for country input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <!-- TextInputEditText for entering country name -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter country name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button for fetching data -->
+    <Button
+        android:id="@+id/button_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_layout_country"
+        android:text="Fetch Data"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView to display result -->
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/button_fetch"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <!-- ProgressBar for indicating loading -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
